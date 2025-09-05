@@ -10,7 +10,7 @@
 
 ### Links
 
-- Solution URL:
+- Solution URL: https://github.com/shadymo2291/nft-preview-card-component-solution
 
 ### Built with
 
@@ -28,48 +28,39 @@ and pseudo-elements and hover effect
 
 To see how you can add code snippets, see below:
 
-main {
-width: 100vw;
-height: 100vh;
-display: flex !important;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-position: relative;
-}
-main::before {
-content: "";
-width: 100%;
-height: 40vh;
-background-image: url(../images/pattern-background-desktop.svg);
-background-size: contain;
-background-repeat: no-repeat;
-background-position: 0 10%;
-position: absolute;
-top: 0;
+main > h1 {
+    text-align: center;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(90deg, #FFEB3B, #FF5722);
+    margin: 0 0 20px 0;
+    padding: 0 0 20px 0;
+    text-transform: capitalize;
+    font-weight: 800;
 }
 @media (max-width: 768px) {
-main::before {
-transform: scale(2);
-background-position: 0 35%;
+    main {
+        width: 375px;
+    }
+    main > h1 {
+        font-size: 35px;
+        line-height: 1.4;
+    }
 }
+section h3 {
+    font-size: 20px;
+    margin-top: 30px;
+    transition: all 0.2s;
+    cursor: pointer;
 }
-section .change a {
-display: inline-block;
-position: absolute;
-right: 15px;
-color: var(--buttom_color);
-font-size: 11px;
-font-weight: 600;
-}
-section .change a:hover {
-text-decoration: none;
-color: #756cf2;
+section h3:hover {
+    color: #00fff7ff;
 }
 
 ### Continued development
 
-I want to learn more about responsive websites and how to use the pseudo-elements and hover effect
+I want to learn more about responsive websites and how to use the pseudo-elements and the hover effect
 
 ### Useful resources
 
